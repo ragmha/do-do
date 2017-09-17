@@ -6,7 +6,10 @@ import { createStore } from 'redux';
 import todoApp from './reducers';
 import App from './components/App';
 
-const store = createStore(todoApp);
+/* const persistedState = ;...*/
+
+const store = createStore(todoApp /** ,persistedState **/);
+console.log(store.getState());
 
 render(
   <Provider store={store}>
